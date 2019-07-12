@@ -13,7 +13,7 @@
 #' @export
 #'
 
-psuedocohort<-function(birthyear, longmin, longmax, latmin, latmax){
+gen_psuedo_cohort<-function(birthyear, longmin, longmax, latmin, latmax){
 PC01<-pseudocohort(longmin,longmax, latmin,latmax, 200)[1:200,]
 PC01$Year<-birthyear
 PC01$id<-paste0("PC_", seq(1:200))

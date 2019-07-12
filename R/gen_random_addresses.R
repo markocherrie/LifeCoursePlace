@@ -12,7 +12,7 @@
 #' @export
 #'
 
-randomaddresses<-function(longmin, longmax, latmin, latmax, numberofaddresses){
+gen_random_addresses<-function(longmin, longmax, latmin, latmax, numberofaddresses){
 sample_addresses_master<-NULL
 while(is.null(sample_addresses_master) || (nrow(sample_addresses_master) < numberofaddresses)){
 sample<-data.frame(cbind(runif(1000,longmin,longmax),runif(1000,latmin,latmax)))
