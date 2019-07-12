@@ -13,12 +13,17 @@
 #'
 
 pseudocohort<-function(longmin, longmax, latmin, latmax, numberofaddresses){
+sample_addresses_master<-NULL
+while(is.null(sample_addresses_master) || (nrow(sample_addresses_master) < numberofaddresses)){
 sample<-data.frame(cbind(runif(1000,longmin,longmax),runif(1000,latmin,latmax)))
 colnames(sample)<-c("long", "lat")
-sample_addresses <- photon::reverse(x = sample$long[1:numberofaddresses], y = sample$lat[1:numberofaddresses])
+sample_addresses <- photon::reverse(x = sample$long[1:5], y = sample$lat[1:5])
 sample_addresses<-sample_addresses[sample_addresses$osm_value=="house",]
 sample_addresses<-sample_addresses[!is.na(sample_addresses$x),]
-sample_addresses
+sample_addresses_master<-rbind(sample_addresses_master, sample_addresses)
+}
+sample_addresses_master
 }
 
 
+# test pseudocohort(longmin= -3.316587,longmax=-3.071410, latmin=55.891648,latmax=55.991446, numberofaddresses=10)
