@@ -17,4 +17,4 @@
 #'
 #' @examples
 #' data(EdinburghParks1914)
-"EdinburghParks1914"
+NULL
