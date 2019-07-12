@@ -9,7 +9,7 @@
 #' @param longmax maximum longitude of bounding box
 #' @param latmin minimum latitude of bounding box
 #' @param latmax maximum longitude of bounding box
-#' @return A dataframe of addresses in bounding box
+#' @return A cohort of participants with longitudinal address history
 #' @export
 #'
 
