@@ -1,4 +1,4 @@
-#' Generate Psuedo Longitudinal Cohort
+#' Generate Random Address
 #'
 #' This function generates random Open Street Map addresses for a given bounding box
 #'
@@ -12,7 +12,7 @@
 #' @export
 #'
 
-pseudocohort<-function(longmin, longmax, latmin, latmax, numberofaddresses){
+randomaddresses<-function(longmin, longmax, latmin, latmax, numberofaddresses){
 sample_addresses_master<-NULL
 while(is.null(sample_addresses_master) || (nrow(sample_addresses_master) < numberofaddresses)){
 sample<-data.frame(cbind(runif(1000,longmin,longmax),runif(1000,latmin,latmax)))
@@ -26,4 +26,4 @@ sample_addresses_master
 }
 
 
-# test pseudocohort(longmin= -3.316587,longmax=-3.071410, latmin=55.891648,latmax=55.991446, numberofaddresses=10)
+# test randomaddresses(longmin= -3.316587,longmax=-3.071410, latmin=55.891648,latmax=55.991446, numberofaddresses=10)
