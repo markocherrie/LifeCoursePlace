@@ -1,6 +1,6 @@
 #' Generate greenspace buffers
 #'
-#' This function generates greenspace 'exposure' for participants
+#' This function generates greenspace 'exposure' for participants.
 #'
 #' @param lat
 #' @param lon
