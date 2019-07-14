@@ -6,10 +6,9 @@
 #' @param lon
 #' @param id
 #' @param year
-#' @param buffer
+#' @param buffersize
 #' @return A dataframe of addresses with buffered exposure
 #' @export
 #'
 #'
-#'U:\Datastore\CSCE\geos\groups\mmplbc\MPCC_MMP_2018\Paper7_traj\clean!!
 #'
