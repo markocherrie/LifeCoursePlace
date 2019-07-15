@@ -6,6 +6,7 @@
 #'
 #'
 #' @param birthyear year of birth for cohort
+#' @param longmin minimum longitude of bounding box
 #' @param longmax maximum longitude of bounding box
 #' @param latmin minimum latitude of bounding box
 #' @param latmax maximum longitude of bounding box
